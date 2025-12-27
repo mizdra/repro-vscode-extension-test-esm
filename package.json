@@ -1,0 +1,38 @@
+{
+  "name": "repro-vscode-test-esm",
+  "version": "1.0.0",
+  "publisher": "mizdra",
+  "description": "",
+  "main": "src/extension.js",
+  "engines": {
+    "vscode": "^1.100.0"
+  },
+  "contributes": {
+    "commands": [
+      {
+        "command": "extension.helloWorld",
+        "title": "Hello World"
+      }
+    ]
+  },
+  "scripts": {
+    "start": "node test/runTest.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/mizdra/repro-vscode-test-esm.git"
+  },
+  "author": "mizdra <pp.mizdra@gmail.com>",
+  "license": "MIT",
+  "type": "module",
+  "bugs": {
+    "url": "https://github.com/mizdra/repro-vscode-test-esm/issues"
+  },
+  "homepage": "https://github.com/mizdra/repro-vscode-test-esm#readme",
+  "devDependencies": {
+    "@types/node": "^25.0.3",
+    "@types/vscode": "^1.107.0",
+    "@vscode/test-electron": "^2.5.2",
+    "typescript": "^5.9.3"
+  }
+}
